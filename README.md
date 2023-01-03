@@ -33,6 +33,7 @@ Requirements Checklist:
 [ ] - When a specific Place Type is selected, show only the places with this Place Type on the map
 
 4 - Allow custom marker
+
 [ ] - Long Press anywhere on map to show a draggable marker
 
 [ ] -  Show distance3 to the nearest place (from the downloaded data), and on drag marker, update this info
