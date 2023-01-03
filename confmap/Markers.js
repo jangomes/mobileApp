@@ -21,11 +21,17 @@ const Ireland = {
 
 
 export default function App(){
-state = {markerList: []}
+state = {markerList: [], markers: []}
 
   const [dataMarkers, setPlaceMarkers] = useState([]);
   const navigation = useNavigation();
   const [dataPlaces, setPlaceTypes] = useState([]);
+
+// Constructor with bind to the onPress function
+  // constructor(props) ;{
+  //   super(props);
+  //  this.onPress = this.onPress.bind(this);
+  // }
 
 
 //Get the data from the API  
@@ -71,7 +77,19 @@ function getPlacesName(place_type_id) {
 <View style={styles.container}> 
 
       <MapView 
-        style={styles.map} initialRegion={Ireland}>
+        style={styles.map} initialRegion={Ireland}
+        
+        //trying to creat a markers when click on the map
+        onPress={(e) => this.setState({ marker: e.nativeEvent.coordinate })}
+        >
+
+        {
+              // if state contains marker variable with a valid value, render the marker
+              this.state.marker &&
+              <MapView.Marker coordinate={this.state.marker} />
+        }
+
+
         {dataMarkers.map((marker, index) => (
 
         //Rendering a list of markers on a map     
@@ -88,8 +106,6 @@ function getPlacesName(place_type_id) {
           onDragEnd={(e) => { 
               console.log('dragStart', e.nativeEvent.coordinate)}}
 
-
-              
           
           //To navigate to the details page
           onCalloutPress={() => navigation.navigate( 'Details', { marker: marker})}
@@ -106,10 +122,11 @@ function getPlacesName(place_type_id) {
 
     </Marker>  
 ))}
-        {/* <Circle
-          center={{ latitude: 53.3425, longitude: -6.26583333333 }}
+
+        {/* { <Circle color = "rgba(0,0,0,0.1)" fillColor = "rgba(0,0,0,0.1)"
+          center={{ latitude: Ireland.latitude, longitude: Ireland.longitude}}
           radius={1000}
-          /> */}
+          /> } */}
 
 </MapView>
 

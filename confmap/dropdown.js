@@ -1,57 +1,29 @@
-import { styles } from "../Styles";
-import React, { useEffect, useState } from "react";
-import { Dropdown } from 'react-native-element-dropdown';
-import { useNavigation } from "@react-navigation/native";
-import MapFunction from "./Markers.js";
+import SelectList from 'react-native-dropdown-select-list';
+import React from 'react';
+import { View, Text, StyleSheet, Button, Image } from 'react-native';
 
+const App = () => {
 
-// In here we are defining a filter screen based on the PlacesType ID. The data is being pulled from PlacesType API
+    const [placeName,setplaceName] = React.useState([]);
 
-export default function FilterScreen() {
- 
-const navigation = useNavigation()
-const [search, setSearch] = useState(0)
+    useEffect(()=>{
+        fetchData()
+      },[]);
+        
+      const fetchData = () => {
+        fetch("https://gist.githubusercontent.com/saravanabalagi/541a511eb71c366e0bf3eecbee2dab0a/raw/bb1529d2e5b71fd06760cb030d6e15d6d56c34b3/places.json")
+          .then(response => response.json())
+          .then(jsonResponse => setUsers(jsonResponse))
+          .catch(error => console.log(error))
+      };
+
+    return (
+        <View style={styles.container}>
     
-  const PlaceTypeName = [
-    { label: "Show all places", id: 0 },
-    { label: "Province", id: 1 },
-    { label: "County", id: 2 },
-    { label: "City", id: 3 },
-    { label: "Town", id: 4 },
-    { label: "Townland", id: 5 },
-    { label: "Barony", id: 6 },
-    { label: "Street ", id: 7 },
-    { label: "Village", id: 8 },
-    { label: "River ", id: 9 },
-    { label: "Other", id: 10 },
-    { label: "Country", id: 11 },
-    { label: "Castle", id: 12 },
-    { label: "Seignory", id: 13 },
-    { label: "Forest", id: 14 },
-    { label: "Lake", id: 15 },
-  ]; // TODO: GET DATA FROM PLACETYPE API
+        <SelectList data={data} setplaceName={setplaceName} />
 
-
-  useEffect(() => {
-    navigation.setOptions({
-      headerLargeTitle: true,
-      headerRight: () => (
-        // Filter by place type with dropdown menu
-
-        <Dropdown
-          placeholder="Filter places"
-          style={styles.dropdown}
-          containerStyle={styles.dropdownContainer}
-          data={PlaceTypeName}
-          labelField="label"
-          valueField="id"
-          onChange={(value) => setSearch(value.id)}
-          />
-       )})
-}) 
- 
-
-return (
-  <MapFunction filter={search}/>
-)
+         </View>
+    )
 }
+
+export default App;
