@@ -1,6 +1,10 @@
 # mobileApp
 # 21944 - Janaina Gomes da Silva
 
+YouTube Video:
+https://youtu.be/7_idUCsDn7s
+
+
 Mobile APP CA4 - Janaina Gomes
 
 This repository contains an application made by the student Janaina as part of Dorset College BSc Year 3 assignment CA1,
@@ -39,3 +43,16 @@ Requirements Checklist:
 [ ] -  Show distance3 to the nearest place (from the downloaded data), and on drag marker, update this info
 
 [ ] - Draw a semi-transparent blue circle around this marker with a radius of 10 km and show number of places within this radius
+
+
+ASSIGNMENT SOLUTION:
+The project had several challenges, starting with the creation of the map that I managed to solve following the tutorials found in the reference.  All steps had their degree of difficulty and with intense research I managed to solve the problems found along the way, but as the degree of complexity of the work increased, I could not find any clear solution on how to solve the code and implement the solution in my project that was already underway.  As for example the Dropdown that could be implemented I tried to follow all the available tutorials and introduce the solution in my code, but without success I failed in all attempts and also added an array to be able to generate the markers I added the code and tried to generate the markers through Onclick, every time the map was clicked I would have to add the latitude and longitude to the array and generate the marker, but that didn't work either.  Some of the solutions found will be in the reference, despite not being able to reproduce the desired effect, I will leave the research done related to the missing parts.  I managed to drag the markers, this was one of the requirements after the marker was created, I managed to create the circle on the map, but I disabled it because I could not create the marker.  Detail images are taken from the Internet, information is captured through fetches.  Despite not being able to solve a part of the project I managed to learn a lot more now and understand how the commands worked.
+
+
+References:
+Reda, A. (2022) React-native-select-dropdown, npm. NPM. Available at: https://www.npmjs.com/package/react-native-select-dropdown (Accessed: January 3, 2023). 
+Lencioni, J. and Tarano, N. (2022) React-native-maps, npm. NPM. Available at: https://www.npmjs.com/package/react-native-maps?activeTab=readme (Accessed: January 3, 2023). 
+React Native Maps Mini Course (2021) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=qlELLikT3FU&ab_channel=DarwinTech (Accessed: January 3, 2023). 
+How to Use Google Maps in React Native (2019) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=AzjWv1X-uyg&ab_channel=TheFlutterFactory (Accessed: January 3, 2023). 
+
+
