@@ -50,9 +50,12 @@ The project had several challenges, starting with the creation of the map that I
 
 
 References:
-Reda, A. (2022) React-native-select-dropdown, npm. NPM. Available at: https://www.npmjs.com/package/react-native-select-dropdown (Accessed: January 3, 2023). 
-Lencioni, J. and Tarano, N. (2022) React-native-maps, npm. NPM. Available at: https://www.npmjs.com/package/react-native-maps?activeTab=readme (Accessed: January 3, 2023). 
-React Native Maps Mini Course (2021) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=qlELLikT3FU&ab_channel=DarwinTech (Accessed: January 3, 2023). 
-How to Use Google Maps in React Native (2019) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=AzjWv1X-uyg&ab_channel=TheFlutterFactory (Accessed: January 3, 2023). 
+Reda, A. (2022) React-native-select-dropdown, npm. NPM. Available at: https://www.npmjs.com/package/react-native-select-dropdown
+
+Lencioni, J. and Tarano, N. (2022) React-native-maps, npm. NPM. Available at: https://www.npmjs.com/package/react-native-maps?activeTab=readme
+
+React Native Maps Mini Course (2021) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=qlELLikT3FU&ab_channel=DarwinTech 
+
+How to Use Google Maps in React Native (2019) YouTube. YouTube. Available at: https://www.youtube.com/watch?v=AzjWv1X-uyg&ab_channel=TheFlutterFactory
 
 
