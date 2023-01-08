@@ -46,10 +46,14 @@ Requirements Checklist:
 
 
 ASSIGNMENT SOLUTION:
+
+
 The project had several challenges, starting with the creation of the map that I managed to solve following the tutorials found in the reference.  All steps had their degree of difficulty and with intense research I managed to solve the problems found along the way, but as the degree of complexity of the work increased, I could not find any clear solution on how to solve the code and implement the solution in my project that was already underway.  As for example the Dropdown that could be implemented I tried to follow all the available tutorials and introduce the solution in my code, but without success I failed in all attempts and also added an array to be able to generate the markers I added the code and tried to generate the markers through Onclick, every time the map was clicked I would have to add the latitude and longitude to the array and generate the marker, but that didn't work either.  Some of the solutions found will be in the reference, despite not being able to reproduce the desired effect, I will leave the research done related to the missing parts.  I managed to drag the markers, this was one of the requirements after the marker was created, I managed to create the circle on the map, but I disabled it because I could not create the marker.  Detail images are taken from the Internet, information is captured through fetches.  Despite not being able to solve a part of the project I managed to learn a lot more now and understand how the commands worked.
 
 
+
 References:
+
 Reda, A. (2022) React-native-select-dropdown, npm. NPM. Available at: https://www.npmjs.com/package/react-native-select-dropdown
 
 Lencioni, J. and Tarano, N. (2022) React-native-maps, npm. NPM. Available at: https://www.npmjs.com/package/react-native-maps?activeTab=readme
